@@ -5,31 +5,22 @@
 }
 
 body {
-    font-family: 'Inter', system-ui, sans-serif;
-    background: linear-gradient(135deg, #0a0a0a, #1a1a2e);
+    font-family: 'Cairo', sans-serif;
+    background: #0f0f0f;
     color: #ffffff;
-    line-height: 1.6;
     text-align: center;
-    min-height: 100vh;
-}
-
-header {
-    padding: 80px 20px 50px;
+    line-height: 1.8;
+    padding: 40px 20px;
 }
 
 .logo-container {
-    width: 240px;
-    height: 240px;
-    margin: 0 auto 25px;
+    width: 220px;
+    height: 220px;
+    margin: 0 auto 20px;
     border-radius: 50%;
     overflow: hidden;
-    border: 8px solid #00ff9d;
-    box-shadow: 0 0 50px rgba(0, 255, 157, 0.6);
-    transition: all 0.4s ease;
-}
-
-.logo-container:hover {
-    transform: scale(1.1) rotate(5deg);
+    border: 6px solid #00ff9d;
+    box-shadow: 0 0 30px rgba(0, 255, 157, 0.4);
 }
 
 .circular-logo {
@@ -39,114 +30,67 @@ header {
 }
 
 h1 {
-    font-size: 4rem;
-    font-weight: 900;
-    background: linear-gradient(90deg, #00ff9d, #00ccff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    letter-spacing: -2px;
-}
-
-.services {
-    padding: 60px 20px;
-    background: rgba(255,255,255,0.03);
-}
-
-.services h2 {
-    font-size: 2.8rem;
-    margin-bottom: 50px;
+    font-size: 3.2rem;
+    margin-bottom: 60px;
     color: #00ff9d;
-    font-weight: 700;
 }
 
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+h2 {
+    font-size: 2.2rem;
+    margin: 50px 0 30px;
+    color: #ffffff;
 }
 
-.service-card {
-    background: rgba(255,255,255,0.06);
-    padding: 35px 25px;
-    border-radius: 24px;
-    border: 1px solid rgba(0, 255, 157, 0.15);
-    transition: all 0.4s ease;
-}
-
-.service-card:hover {
-    transform: translateY(-20px);
-    border-color: #00ff9d;
-    box-shadow: 0 25px 50px rgba(0, 255, 157, 0.2);
-}
-
-.service-card h3 {
-    color: #00ff9d;
-    margin-bottom: 15px;
-    font-size: 1.75rem;
-}
-
-.payment {
-    padding: 70px 20px;
-    background: #0a0a0a;
-}
-
-.payment h2 {
-    font-size: 2.8rem;
-    margin-bottom: 50px;
-    color: #00ccff;
-    font-weight: 700;
-}
-
-.payment-methods {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-    flex-wrap: wrap;
-    max-width: 900px;
+.services-list {
+    max-width: 600px;
     margin: 0 auto;
 }
 
-.method {
-    background: rgba(0, 204, 255, 0.08);
-    padding: 30px 45px;
+.services-list p {
+    font-size: 1.5rem;
+    margin: 18px 0;
+    padding: 12px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+}
+
+.payment-box {
+    max-width: 500px;
+    margin: 30px auto;
+    background: #1a1a1a;
+    padding: 40px 30px;
     border-radius: 20px;
     border: 2px solid #00ccff;
-    min-width: 300px;
 }
 
-.method h3 {
-    color: #00ccff;
-    margin-bottom: 12px;
+.payment-box p {
+    font-size: 1.4rem;
+    margin: 12px 0;
+}
+
+.payment-box strong {
+    color: #00ff9d;
     font-size: 1.6rem;
 }
 
-.method p {
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-.note {
-    margin-top: 40px;
-    font-size: 1.15rem;
-    color: #bbbbbb;
-}
-
 footer {
-    padding: 35px;
-    background: #000;
-    font-size: 1.05rem;
-    color: #666;
+    margin-top: 80px;
+    padding-top: 30px;
+    border-top: 1px solid #333;
+    color: #777;
+    font-size: 1.1rem;
 }
 
-@media (max-width: 768px) {
+/* Responsive */
+@media (max-width: 600px) {
     .logo-container {
-        width: 190px;
-        height: 190px;
+        width: 180px;
+        height: 180px;
     }
     h1 {
-        font-size: 3rem;
+        font-size: 2.6rem;
+    }
+    h2 {
+        font-size: 1.9rem;
     }
 }
